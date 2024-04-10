@@ -621,7 +621,72 @@ footer span a:hover{
     background: crimson!important;
 }
 
+/* Testimonial section */
+.testimonial .title::after{
+    content: "what people say";
+}
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
 
+.testimonial .max-width {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonial .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: calc(100% / 3 - 40px); /* Adjust width to fit three boxes */
+    width: 100%; /* Set width to 100% for smaller screens */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.testimonial-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonial-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.testimonial-info span {
+    font-size: 0.9em;
+    color: #777;
+}
  
 /* styling footer section */
 footer{
@@ -716,6 +781,13 @@ footer{
     }
     
 
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .testimonial-box {
+        max-width: calc(100% - 40px); /* Adjust width to fit full width for smaller screens */
+    }
 }
 @media(max-width:690px){
     .max-width{
